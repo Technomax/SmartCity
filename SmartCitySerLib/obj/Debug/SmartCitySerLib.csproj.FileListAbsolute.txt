@@ -1,0 +1,31 @@
+E:\anilProject\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.csprojResolveAssemblyReference.cache
+E:\anilProject\SmartCity\SmartCitySerLib\bin\SmartCitySerLib.dll
+E:\anilProject\SmartCity\SmartCitySerLib\bin\SmartCitySerLib.pdb
+E:\anilProject\SmartCity\SmartCitySerLib\bin\EntityFramework.dll
+E:\anilProject\SmartCity\SmartCitySerLib\bin\SmartCityEntity.dll
+E:\anilProject\SmartCity\SmartCitySerLib\bin\SmartCityEntity.pdb
+E:\anilProject\SmartCity\SmartCitySerLib\bin\EntityFramework.xml
+E:\anilProject\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.dll
+E:\anilProject\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\bin\SmartCitySerLib.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\bin\SmartCitySerLib.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\bin\EntityFramework.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\bin\SmartCityEntity.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\bin\SmartCityEntity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\bin\EntityFramework.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.csprojResolveAssemblyReference.cache
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.pdb
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\SmartCitySerLib.dll
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\SmartCitySerLib.pdb
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\EntityFramework.dll
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\Forecasting.dll
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\SmartCityEntity.dll
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\Forecasting.pdb
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\NNHelpers.pdb
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\SmartCityEntity.pdb
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\bin\EntityFramework.xml
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.csprojResolveAssemblyReference.cache
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.dll
+E:\Technomax_Projects\SmartCity\SmartCitySerLib\obj\Debug\SmartCitySerLib.pdb

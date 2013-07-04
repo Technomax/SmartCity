@@ -1,0 +1,49 @@
+﻿@model  SmartCity.Models.BaseLineModel
+@{
+    ViewBag.Title = "ColumnLine and Pie Display";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="Content" style="padding-top: 10px;">
+    @{Html.RenderPartial("_SearchParam");}
+</div>
+<div id="Chart_Content">
+    @{Html.RenderPartial("_Chart");}
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $("#searchParam_FromDate").datepicker({
+                format: "mm/dd/yyyy",
+
+                autoclose: true,
+                onClose: function (selectedDate) {
+                    $("#searchParam_FromDate").datepicker("option", "searchParam_FromDate", selectedDate);
+                }
+            });
+        });
+        $(function () {
+            $("#searchParam_ToDate").datepicker({
+                format: "mm/dd/yyyy",
+
+                autoclose: true,
+                onClose: function (selectedDate) {
+                    $("#searchParam_ToDate").datepicker("option", "searchParam_ToDate", selectedDate);
+                }
+            });
+        });
+        $(function () {
+            $('#Search').click(function () {
+                var fromDate = $('#searchParam_FromDate').val();
+                var toDate = $('#searchParam_ToDate').val();
+                var station = $('#Station').val();
+                var displayOption = $('#DisplayOption').val();
+                var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+                $('#Chart_Content').html($loading);
+                $.get('/DualAxesLineAndColumn/_Chart?paramFromDate=' + fromDate + '&paramToDate=' + toDate + '&station=' + station + '&displayOption=' + displayOption, function (data) {
+                    $('#Chart_Content').html(data);
+                });
+            });
+        });
+    </script>
+}

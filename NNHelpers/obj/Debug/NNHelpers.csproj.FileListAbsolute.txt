@@ -1,0 +1,14 @@
+C:\Users\Hank Serene\Desktop\SmartCity\SmartCity\NNHelpers\bin\Debug\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity\SmartCity\NNHelpers\bin\Debug\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity\SmartCity\NNHelpers\obj\Debug\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity\SmartCity\NNHelpers\obj\Debug\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\NNHelpers\bin\Debug\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\NNHelpers\bin\Debug\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\NNHelpers\obj\Debug\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\NNHelpers\obj\Debug\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\NNHelpers\obj\Debug\NNHelpers.csprojResolveAssemblyReference.cache
+E:\Technomax_Projects\SmartCity\NNHelpers\bin\Debug\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\NNHelpers\bin\Debug\NNHelpers.pdb
+E:\Technomax_Projects\SmartCity\NNHelpers\obj\Debug\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\NNHelpers\obj\Debug\NNHelpers.pdb
+E:\Technomax_Projects\SmartCity\NNHelpers\obj\Debug\NNHelpers.csprojResolveAssemblyReference.cache

@@ -1,0 +1,73 @@
+﻿@model  SmartCity.Models.BaseLineModel
+@{
+    ViewBag.Title = "ColumnLine and Pie Display";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="Content" style="padding-top: 10px;">
+    @{Html.RenderPartial("_SearchParam");}
+</div>
+<div id="Chart_Content">
+    @{Html.RenderPartial("_Chart");}
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $("#searchParam_FromDate").datepicker({
+                format: "mm/dd/yyyy",
+
+                autoclose: true,
+                onClose: function (selectedDate) {
+                    $("#searchParam_FromDate").datepicker("option", "searchParam_FromDate", selectedDate);
+                }
+            });
+        });
+        $(function () {
+            $("#searchParam_ToDate").datepicker({
+                format: "mm/dd/yyyy",
+
+                autoclose: true,
+                onClose: function (selectedDate) {
+                    $("#searchParam_ToDate").datepicker("option", "searchParam_ToDate", selectedDate);
+                }
+            });
+        });
+        $(function () {
+            $('#Search').click(function () {
+                var fromDate = $('#searchParam_FromDate').val();
+                var toDate = $('#searchParam_ToDate').val();
+                var station = $('#searchParam_StationList').val();
+                //Validate the station length
+                if (station.split(',').length < 4) {
+                    alert("Please select any four station.");
+                    return;
+                }
+                var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+                $('#Chart_Content').html($loading);
+                $.get('/ColumnLineAndPie/_Chart?paramFromDate=' + fromDate + '&paramToDate=' + toDate + '&station=' + station, function (data) {
+                    $('#Chart_Content').html(data);
+                });
+            });
+        });
+
+        $(function () {
+            $('#Reset').click(function () {
+                var searchParam_StationList = document.getElementById('searchParam_StationList');
+                searchParam_StationList.text = searchParam_StationList.value = $('#Station').val();
+            });
+        });
+
+        $(function () {
+            $('#Station').change(function () {
+                var ChartOption = $('#ChartOption').val();
+                var searchParam_StationList = document.getElementById('searchParam_StationList');
+                if (ChartOption == 'Single Station') {
+                    searchParam_StationList.text = searchParam_StationList.value = $(this).val();
+                }
+                else {
+                    searchParam_StationList.text = searchParam_StationList.value = $('#searchParam_StationList').val() + ',' + $(this).val();
+                }
+            });
+        });
+    </script>
+}

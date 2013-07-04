@@ -1,0 +1,49 @@
+﻿@model  SmartCity.Models.TabularModel_Forecast
+@{
+    ViewBag.Title = "Tabular Display";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="Content" style="padding-top: 10px;">
+@{Html.RenderPartial("_SearchParam");}
+</div>
+<div id="Chart_Content">
+    @{Html.RenderPartial("_List");}
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $("#searchParam_SetDate").datepicker({
+                format: "mm/dd/yyyy",
+
+                autoclose: true,
+               
+            });
+        });
+        
+        $(function () {
+            $('#Search').click(function () {
+              
+
+                var setDate = $('#searchParam_SetDate').val();
+                
+
+                var station = $('#Station').val();
+                
+
+                var airPollutionLevel = $('#searchParam_airPollutionLevel').val();
+               
+                var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+                $('#Chart_Content').html($loading);
+                
+                $.get('/ForecastTabular/_List?paramSetDate=' + setDate 
+                    + '&station=' + station + '&airPollutionLevel=' + airPollutionLevel , function (data) {
+                        $('#Chart_Content').html(data);
+                    });
+                
+            });
+        });
+
+       
+    </script>
+}

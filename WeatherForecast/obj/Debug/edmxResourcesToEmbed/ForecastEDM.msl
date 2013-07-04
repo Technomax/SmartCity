@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SmartCityModelStoreContainer" CdmEntityContainer="SmartCityEntities">
+    <EntitySetMapping Name="Adm_ForecastWeather">
+      <EntityTypeMapping TypeName="SmartCityModel.Adm_ForecastWeather">
+        <MappingFragment StoreEntitySet="Adm_ForecastWeather">
+          <ScalarProperty Name="IDForecastWeather" ColumnName="IDForecastWeather" />
+          <ScalarProperty Name="IDStation" ColumnName="IDStation" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Weather">
+      <EntityTypeMapping TypeName="SmartCityModel.Adm_Weather">
+        <MappingFragment StoreEntitySet="Adm_Weather">
+          <ScalarProperty Name="IDWeather" ColumnName="IDWeather" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="WeatherDate" ColumnName="WeatherDate" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="fc_PreditInput" FunctionName="SmartCityModel.Store.fc_PreditInput">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.fc_PreditInput_Result">
+          <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+<div class="well sidebar-nav">
+    <ul class="nav nav-list">
+        <li class="nav-header">History View</li>  
+        <li>@Html.ActionLink("Tabular View", "Index", "HistoryTabular")</li>  
+        <li>@Html.ActionLink("Base Line", "Index", "BaseLine")</li>  
+        <li>@Html.ActionLink("ColumnLine", "Index", "ColumnLineAndPie")</li>   
+        <li>@Html.ActionLink("DualAxesLine And Column", "Index", "DualAxesLineAndColumn")</li>      
+    </ul>
+    <ul class="nav nav-list">
+        <li class="nav-header">Forecast View</li>  
+        <li>@Html.ActionLink("Tabular View", "Index", "ForecastTabular")</li>  
+        <li>@Html.ActionLink("Base Line", "Index", "ForecastBaseLine")</li>  
+      
+    </ul>
+</div>

@@ -1,0 +1,61 @@
+﻿@model DotNet.Highcharts.Highcharts
+@{
+    ViewBag.Title = "Dashboard";
+    Layout =  "~/Views/ChartSamples/Shared/_Layout.cshtml";
+}
+<div id="Content" style="padding-top: 10px;">
+    <div class="btn-group">
+        <button id="MaxTemp" class="btn">Maximum Temperature</button>
+        <button id="MinTemp" class="btn">Minimum Temperature</button>
+        <button id="RainFall" class="btn">RainFall</button>
+        <button id="AirPollution" class="btn">Air Pollution Level</button>
+    </div>
+</div>
+<div id="push"></div>
+<div id="Chart_Content">
+    @{Html.RenderPartial("MaxTemp");}
+</div>
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('#MaxTemp').click(function () {
+                var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+                $('#Chart_Content').html($loading);
+                $.get('/DashboardView/MaxTemp', function (data) {
+                    $('#Chart_Content').html(data);
+                });
+            });
+        });
+
+       $(function () {
+           $('#MinTemp').click(function () {
+               var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+               $('#Chart_Content').html($loading);
+               $.get('/DashboardView/MinTemp', function (data) {
+                   $('#Chart_Content').html(data);
+               });
+           });
+       });
+
+       $(function () {
+           $('#RainFall').click(function () {
+               var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+               $('#Chart_Content').html($loading);
+               $.get('/DashboardView/RainFall', function (data) {
+                   $('#Chart_Content').html(data);
+               });
+           });
+       });
+
+       $(function () {
+           $('#AirPollution').click(function () {
+               var $loading = $('<img src="/Resources/ajaxLoading.gif" alt="loading" class="ui-loading-icon">');
+               $('#Chart_Content').html($loading);
+               $.get('/DashboardView/AirPollution', function (data) {
+                   $('#Chart_Content').html(data);
+               });
+           });
+       });
+
+    </script>
+}

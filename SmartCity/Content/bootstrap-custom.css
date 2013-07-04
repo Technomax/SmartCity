@@ -1,0 +1,162 @@
+﻿
+/*Table*/
+.table-head {
+    font-weight: bold;
+    min-height: 30px;
+    line-height: 30px;
+    background-color: #fafafa;
+    background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    background-repeat: repeat-x;
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+    .table-head div {
+        padding: 0 0 0 5px;
+    }
+
+.table-row {
+    border-bottom: 1px solid #eeeeee;
+    line-height: 20px;
+    padding: 2px 0;
+}
+
+.table-row-item {
+   padding: 0 0 0 5px;
+    min-height: 20px;
+}
+
+.table-row-btn {
+    padding: 4px 8px;
+}
+
+.table-row-d-menu {
+    min-width: 110px;
+}
+
+.row-per-page {
+    width: 70px;
+}
+
+.total-record {
+    line-height: 30px;
+}
+
+#search-panel ul > li {
+    display: inline;
+}
+
+#search-panel ul > li .btn {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    font-size:12px;
+}
+
+ .btn-row-mini{
+    border-radius: 3px 3px 3px 3px;
+    padding: 0 2px;
+}
+
+ .btn-row-large {
+    border-radius: 6px 6px 6px 6px;
+    font-size: 14.5px;
+    padding: 11px 23px;
+}
+
+.container {
+    margin: 0 10px;
+}
+
+.short-header {
+    cursor:pointer;
+}
+
+/*added by Hari*/
+label {
+    float: left;
+    font-weight: bold;
+    padding-right: 5px;
+    text-align: right;
+    vertical-align: middle;
+    width: 115px;
+        background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.row-fluid textarea
+{
+    width:595px;
+}
+.hidden
+{
+    display:none;
+    width:0;
+    height:0;
+}
+
+.form-horizontal .control-group {
+    margin-bottom: 10px;
+}
+
+select, input[type="file"] {
+    line-height: 30px;
+}
+
+select, input[type="file"] {
+    height: 27px;
+    line-height: 30px;
+}
+
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    height: 18px;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+}
+
+.row-fluid [class*="span"] {
+    min-height: 22px;
+    margin-left:0px;
+}
+
+.table-row-btn {
+    display: inline;
+    padding: 4px 8px;
+}
+
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
+    font-size: 12px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    font-size:12px;
+}
+
+.ui-loading-icon
+{
+    margin-left:40%;
+    margin-top:10%;
+}

@@ -1,0 +1,7 @@
+E:\Technomax_Projects\SmartCity\SmartCityEntity\bin\Release\SmartCityEntity.dll.config
+E:\Technomax_Projects\SmartCity\SmartCityEntity\bin\Release\SmartCityEntity.dll
+E:\Technomax_Projects\SmartCity\SmartCityEntity\bin\Release\SmartCityEntity.pdb
+E:\Technomax_Projects\SmartCity\SmartCityEntity\bin\Release\EntityFramework.dll
+E:\Technomax_Projects\SmartCity\SmartCityEntity\bin\Release\EntityFramework.xml
+E:\Technomax_Projects\SmartCity\SmartCityEntity\obj\Release\SmartCityEntity.dll
+E:\Technomax_Projects\SmartCity\SmartCityEntity\obj\Release\SmartCityEntity.pdb

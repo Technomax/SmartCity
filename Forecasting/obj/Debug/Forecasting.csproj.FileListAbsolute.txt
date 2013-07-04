@@ -1,0 +1,22 @@
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\obj\Debug\Forecasting.csprojResolveAssemblyReference.cache
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\Forecasting.dll.config
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\Forecasting.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\Forecasting.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\EntityFramework.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\SmartCityEntity.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\SmartCityEntity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\bin\Debug\EntityFramework.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\obj\Debug\Forecasting.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\Forecasting\obj\Debug\Forecasting.pdb
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\Forecasting.dll.config
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\Forecasting.dll
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\Forecasting.pdb
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\SmartCityEntity.dll
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\NNHelpers.pdb
+E:\Technomax_Projects\SmartCity\Forecasting\bin\Debug\SmartCityEntity.pdb
+E:\Technomax_Projects\SmartCity\Forecasting\obj\Debug\Forecasting.csprojResolveAssemblyReference.cache
+E:\Technomax_Projects\SmartCity\Forecasting\obj\Debug\Forecasting.dll
+E:\Technomax_Projects\SmartCity\Forecasting\obj\Debug\Forecasting.pdb

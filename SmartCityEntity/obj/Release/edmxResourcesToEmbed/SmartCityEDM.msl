@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SmartCityModelStoreContainer" CdmEntityContainer="SmartCityEntities">
+    <EntitySetMapping Name="Adm_ForecastWeather">
+      <EntityTypeMapping TypeName="SmartCityModel.Adm_ForecastWeather">
+        <MappingFragment StoreEntitySet="Adm_ForecastWeather">
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="IDStation" ColumnName="IDStation" />
+          <ScalarProperty Name="IDForecastWeather" ColumnName="IDForecastWeather" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adm_Weather">
+      <EntityTypeMapping TypeName="SmartCityModel.Adm_Weather">
+        <MappingFragment StoreEntitySet="Adm_Weather">
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="WeatherDate" ColumnName="WeatherDate" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="IDWeather" ColumnName="IDWeather" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="fc_BaseLine" FunctionName="SmartCityModel.Store.fc_BaseLine">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.fc_BaseLine_Result">
+          <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fc_rpt_Tabular" FunctionName="SmartCityModel.Store.fc_rpt_Tabular">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.fc_rpt_Tabular_Result">
+          <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetDataForColLineAndPie" FunctionName="SmartCityModel.Store.sp_GetDataForColLineAndPie">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.sp_GetDataForColLineAndPie_Result">
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="AvgAirPollutionLevel" ColumnName="AvgAirPollutionLevel" />
+          <ScalarProperty Name="AvgMinTemp" ColumnName="AvgMinTemp" />
+          <ScalarProperty Name="AvgMaxTemp" ColumnName="AvgMaxTemp" />
+          <ScalarProperty Name="AvgRainFall" ColumnName="AvgRainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fc_DualAxesLineAndColumn" FunctionName="SmartCityModel.Store.fc_DualAxesLineAndColumn">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.fc_DualAxesLineAndColumn_Result">
+          <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="AvgTemp" ColumnName="AvgTemp" />
+          <ScalarProperty Name="AvgRainFall" ColumnName="AvgRainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fc_PreditInput" FunctionName="SmartCityModel.Store.fc_PreditInput">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.fc_PreditInput_Result">
+          <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+          <ScalarProperty Name="Station" ColumnName="Station" />
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fc_GetLast7DayData" FunctionName="SmartCityModel.Store.fc_GetLast7DayData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SmartCityModel.fc_GetLast7DayData_Result">
+          <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+          <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+          <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+          <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+          <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

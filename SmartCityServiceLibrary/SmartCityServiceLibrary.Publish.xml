@@ -1,0 +1,12 @@
+<publishData>
+  <publishTarget publishUrl="C:\inetpub\wwwroot\SmartCityServiceLibrary\">
+    <file relUrl="bin/SmartCityServiceLibrary.dll" publishTime="04/19/2013 02:43:27" />
+    <file relUrl="bin/SmartCityEntity.pdb" publishTime="04/19/2013 01:30:02" />
+    <file relUrl="Web.config" publishTime="04/19/2013 01:51:12" />
+    <file relUrl="bin/SmartCityServiceLibrary.dll.config" publishTime="04/19/2013 01:51:12" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="04/18/2013 18:38:15" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="04/18/2013 18:38:15" />
+    <file relUrl="bin/SmartCityServiceLibrary.pdb" publishTime="04/19/2013 02:43:27" />
+    <file relUrl="bin/SmartCityEntity.dll" publishTime="04/19/2013 01:30:02" />
+  </publishTarget>
+</publishData>

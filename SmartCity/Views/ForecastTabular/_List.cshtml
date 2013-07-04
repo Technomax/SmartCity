@@ -1,0 +1,28 @@
+﻿@model  SmartCity.Models.TabularModel_Forecast
+@{long count = 0;}
+<form id="list_form">
+    <div id="list">
+        <div class="row-fluid table-head">
+            <div class="span2 short-header">S.N.</div>
+            <div class="span3 short-header">WeatherDate</div>
+            <div class="span4 short-header">Station</div>
+            <div class="span3 short-header">AirPollutionLevel</div>
+            <div class="span3 short-header">MinTemp</div>
+            <div class="span3 short-header">MaxTemp</div>
+            <div class="span3 short-header">RainFall</div>
+        </div>
+        @foreach (var item in Model.tabularModel)
+        {
+            count++;
+            <div class="row-fluid table-row">
+                <div class="span2 table-row-item">@count.ToString().PadLeft(7,'0')</div>
+                <div class="span3 table-row-item">@item.WeatherDate</div>
+                <div class="span4 table-row-item">@item.Station</div>
+                <div class="span3 table-row-item">@item.AirPolutionLevel</div>
+                <div class="span3 table-row-item">@item.MinTemp</div>
+                <div class="span3 table-row-item">@item.MaxTemp</div>
+                <div class="span3 table-row-item">@item.RainFall</div>
+            </div>
+        }
+    </div>
+</form>

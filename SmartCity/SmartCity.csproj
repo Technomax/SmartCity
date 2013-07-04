@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98F3A2A4-CDAF-45BC-8A51-C4EAE6BBA16D}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartCity</RootNamespace>
+    <AssemblyName>SmartCity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNet.Highcharts">
+      <HintPath>..\packages\DotNet.Highcharts.1.2\lib\DotNet.Highcharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\ChartSamples\ChartSamplesAreaRegistration.cs" />
+    <Compile Include="Areas\ChartSamples\Controllers\SampleBoardController.cs" />
+    <Compile Include="Controllers\BaseLineController.cs" />
+    <Compile Include="Controllers\ColumnLineAndPieController.cs" />
+    <Compile Include="Controllers\DualAxesLineAndColumnController.cs" />
+    <Compile Include="Controllers\DashboardViewController.cs" />
+    <Compile Include="Controllers\ForecastBaseLineController.cs" />
+    <Compile Include="Controllers\ForecastTabularController.cs" />
+    <Compile Include="Controllers\HistoryTabularController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseLineModel.cs" />
+    <Compile Include="Models\ChartsData.cs" />
+    <Compile Include="Models\CustomChartsData.cs" />
+    <Compile Include="Models\GlobalModel.cs" />
+    <Compile Include="Models\TabularModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\BaseLineRepo.cs" />
+    <Compile Include="Repository\ColumnLineAndPieRepo.cs" />
+    <Compile Include="Repository\DashboardRepo.cs" />
+    <Compile Include="Repository\DualAxesLineAndColumn.cs" />
+    <Compile Include="Repository\TabularRepo.cs" />
+    <Compile Include="Repository\PairRepo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\body.css" />
+    <Content Include="Content\bootstrap-custom.css" />
+    <Content Include="Content\bootstrap-mvc-validation.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\datepicker.css" />
+    <Content Include="Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\UploadImages\1.jpg" />
+    <Content Include="Content\images\UploadImages\2.jpg" />
+    <Content Include="Content\images\UploadImages\3.jpg" />
+    <Content Include="Content\images\UploadImages\4.jpg" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\start\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="Content\themes\start\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="Content\themes\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="Content\themes\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="Content\themes\start\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="Content\themes\start\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="Content\themes\start\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="Content\themes\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\themes\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="Content\themes\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="Content\themes\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\themes\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Content\themes\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="Content\themes\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Content\themes\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="Content\themes\start\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Resources\ajaxLoading.gif" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\core.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\adapters\mootools-adapter.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\adapters\mootools-adapter.src.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\adapters\prototype-adapter.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\adapters\prototype-adapter.src.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\highcharts.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\highcharts.src.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\modules\canvas-tools.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\modules\canvas-tools.src.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\modules\exporting.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\modules\exporting.src.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\themes\dark-blue.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\themes\dark-green.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\themes\gray.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\themes\grid.js" />
+    <Content Include="Scripts\Highcharts-2.2.1\js\themes\skies.js" />
+    <Content Include="Areas\ChartSamples\Views\Web.config" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\AjaxLoad.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\AreaSpline.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\AreaWithMissingPoints.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\AreaWithNegativeValues.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\BarWithNegotiveStack.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\BasicArea.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\BasicBar.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\BasicColumn.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\BasicLine.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ClickToAddPoint.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ColumnLineAndPie.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ColumnWithDrilldown.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ColumnWithNegativeValues.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ColumnWithRotatedLabels.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\DataLabels.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\DonutChart.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\DualAxesLineAndColumn.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\Index.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\InvertedAxes.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\MultipleAxes.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\PercentageArea.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\PieChart.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\PieWithLegend.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ScatterPlot.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\ScatterPlotWithRegressionLine.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\SplineInvertedAxes.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\SplineUpdateEachSecond.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\SplineWithPlotBands.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\SplineWithSymbols.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\StackedAndGroupedColumn.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\StackedArea.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\StackedBar.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\StackedColumn.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\StackedPercentageColumn.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\TimeDataWithInrregularIntervals.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\TimeSeriesZoomable.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\Shared\Error.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\Shared\Menu\TopMenu.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\Shared\Menu\WellMenu.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\_BasicLine.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\_SingleLine.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\_DataLabels.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\_StackedBar.cshtml" />
+    <Content Include="Areas\ChartSamples\Views\SampleBoard\_PieChart.cshtml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\adapters\mootools-adapter.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\adapters\mootools-adapter.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\adapters\prototype-adapter.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\adapters\prototype-adapter.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\highcharts-more.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\highcharts.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\highcharts.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\canvas-tools.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\canvas-tools.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\data.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\data.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\exporting.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\exporting.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\funnel.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\modules\funnel.src.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\themes\dark-blue.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\themes\dark-green.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\themes\gray.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\themes\grid.js" />
+    <Content Include="Scripts\Highcharts-3.0.1\js\themes\skies.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-apollo.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-clj.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-css.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-go.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-hs.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-lisp.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-lua.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-ml.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-n.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-proto.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-scala.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-sql.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-tex.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-vb.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-vhdl.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-wiki.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-xq.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\lang-yaml.js" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\prettify.css" />
+    <Content Include="Scripts\prettify-small-1-Jun-2011\google-code-prettify\prettify.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\font\iconic_fill.eot" />
+    <Content Include="Content\font\iconic_fill.otf" />
+    <Content Include="Content\font\iconic_fill.svg" />
+    <Content Include="Content\font\iconic_fill.ttf" />
+    <Content Include="Content\font\iconic_fill.woff" />
+    <Content Include="Content\font\iconic_stroke.eot" />
+    <Content Include="Content\font\iconic_stroke.otf" />
+    <Content Include="Content\font\iconic_stroke.svg" />
+    <Content Include="Content\font\iconic_stroke.ttf" />
+    <Content Include="Content\font\iconic_stroke.woff" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\DashboardView\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Menu\TopMenu.cshtml" />
+    <Content Include="Views\Shared\Menu\WellMenu.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\BaseLine\Index.cshtml" />
+    <Content Include="Views\BaseLine\_SearchParam.cshtml" />
+    <Content Include="Views\BaseLine\_Chart.cshtml" />
+    <Content Include="Views\Shared\Editor Templates\Date.cshtml" />
+    <Content Include="Views\HistoryTabular\Index.cshtml" />
+    <Content Include="Views\HistoryTabular\_SearchParam.cshtml" />
+    <Content Include="Views\HistoryTabular\_List.cshtml" />
+    <Content Include="Views\ColumnLineAndPie\_Chart.cshtml" />
+    <Content Include="Views\ColumnLineAndPie\_SearchParam.cshtml" />
+    <Content Include="Views\ColumnLineAndPie\Index.cshtml" />
+    <Content Include="Views\DualAxesLineAndColumn\_Chart.cshtml" />
+    <Content Include="Views\DualAxesLineAndColumn\_SearchParam.cshtml" />
+    <Content Include="Views\DualAxesLineAndColumn\Index.cshtml" />
+    <Content Include="Views\ForecastTabular\Index.cshtml" />
+    <Content Include="Views\ForecastTabular\_SearchParam.cshtml" />
+    <Content Include="Views\ForecastTabular\_List.cshtml" />
+    <Content Include="Views\ForecastBaseLine\Index.cshtml" />
+    <Content Include="Views\ForecastBaseLine\_SearchParam.cshtml" />
+    <Content Include="Views\ForecastBaseLine\_Chart.cshtml" />
+    <Content Include="Views\DashboardView\AirPollution.cshtml" />
+    <Content Include="Views\DashboardView\MaxTemp.cshtml" />
+    <Content Include="Views\DashboardView\MinTemp.cshtml" />
+    <Content Include="Views\DashboardView\RainFall.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\ChartSamples\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Forecasting\Forecasting.csproj">
+      <Project>{c2ed2eb0-3d14-4af0-a5a3-5edb7cadb1a1}</Project>
+      <Name>Forecasting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NNHelpers\NNHelpers.csproj">
+      <Project>{a3e7fde5-52a1-4ad4-9aff-82cc438a0f4d}</Project>
+      <Name>NNHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartCityEntity\SmartCityEntity.csproj">
+      <Project>{d3253ef0-b17b-4e4e-b64c-1c940d70ee36}</Project>
+      <Name>SmartCityEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartCitySerLib\SmartCitySerLib.csproj">
+      <Project>{3c7b1e8d-5efc-48e1-9905-89b040b652ba}</Project>
+      <Name>SmartCitySerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1097</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2864/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

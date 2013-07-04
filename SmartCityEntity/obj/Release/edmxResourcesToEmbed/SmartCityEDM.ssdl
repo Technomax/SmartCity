@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SmartCityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SmartCityModelStoreContainer">
+    <EntitySet Name="Adm_ForecastWeather" EntityType="SmartCityModel.Store.Adm_ForecastWeather" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Adm_Weather" EntityType="SmartCityModel.Store.Adm_Weather" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Adm_ForecastWeather">
+    <Key>
+      <PropertyRef Name="IDForecastWeather" />
+    </Key>
+    <Property Name="IDForecastWeather" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDStation" Type="int" Nullable="false" />
+    <Property Name="MinTemp" Type="int" Nullable="false" />
+    <Property Name="MaxTemp" Type="int" Nullable="false" />
+    <Property Name="RainFall" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Adm_Weather">
+    <Key>
+      <PropertyRef Name="IDWeather" />
+    </Key>
+    <Property Name="IDWeather" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Station" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="WeatherDate" Type="datetime" Nullable="false" />
+    <Property Name="MinTemp" Type="float" Nullable="false" />
+    <Property Name="MaxTemp" Type="float" Nullable="false" />
+    <Property Name="RainFall" Type="float" Nullable="false" />
+    <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+  </EntityType>
+  <Function Name="fc_BaseLine" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paramStation" Type="varchar" Mode="In" />
+    <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+    <Parameter Name="paramTo" Type="datetime" Mode="In" />
+    <Parameter Name="Mode" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="MeaureDate" Type="varchar" MaxLength="100" />
+          <Property Name="Station" Type="varchar" MaxLength="100" />
+          <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+          <Property Name="MinTemp" Type="float" Nullable="false" />
+          <Property Name="MaxTemp" Type="float" Nullable="false" />
+          <Property Name="RainFall" Type="float" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fc_DualAxesLineAndColumn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paramStation" Type="varchar" Mode="In" />
+    <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+    <Parameter Name="paramTo" Type="datetime" Mode="In" />
+    <Parameter Name="Mode" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="MeaureDate" Type="varchar" MaxLength="100" />
+          <Property Name="Station" Type="varchar" MaxLength="100" />
+          <Property Name="AvgTemp" Type="float" Nullable="false" />
+          <Property Name="AvgRainFall" Type="float" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fc_GetLast7DayData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paramStation" Type="varchar" Mode="In" />
+    <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+    <Parameter Name="paramTo" Type="datetime" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="MeaureDate" Type="datetime" />
+          <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+          <Property Name="MinTemp" Type="float" Nullable="false" />
+          <Property Name="MaxTemp" Type="float" Nullable="false" />
+          <Property Name="RainFall" Type="float" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fc_PreditInput" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paramDate" Type="datetime" Mode="In" />
+    <Parameter Name="paramStation" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="MeaureDate" Type="datetime" />
+          <Property Name="Station" Type="varchar" MaxLength="100" />
+          <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+          <Property Name="MinTemp" Type="float" Nullable="false" />
+          <Property Name="MaxTemp" Type="float" Nullable="false" />
+          <Property Name="RainFall" Type="float" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fc_rpt_Tabular" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paramStation" Type="varchar" Mode="In" />
+    <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+    <Parameter Name="paramTo" Type="datetime" Mode="In" />
+    <Parameter Name="Mode" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="MeaureDate" Type="varchar" MaxLength="100" />
+          <Property Name="Station" Type="varchar" MaxLength="100" />
+          <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+          <Property Name="MinTemp" Type="float" Nullable="false" />
+          <Property Name="MaxTemp" Type="float" Nullable="false" />
+          <Property Name="RainFall" Type="float" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="sp_GetDataForColLineAndPie" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="paramStation" Type="varchar" Mode="In" />
+    <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+    <Parameter Name="paramTo" Type="datetime" Mode="In" />
+  </Function>
+</Schema>

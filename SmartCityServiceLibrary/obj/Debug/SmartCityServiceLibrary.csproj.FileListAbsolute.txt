@@ -1,0 +1,10 @@
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\SmartCityServiceLibrary.dll.config
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\SmartCityServiceLibrary.dll
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\SmartCityServiceLibrary.pdb
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\EntityFramework.dll
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\EntityFramework.xml
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\obj\Debug\SmartCityServiceLibrary.dll
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\obj\Debug\SmartCityServiceLibrary.pdb
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\SmartCityEntity.dll
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\bin\Debug\SmartCityEntity.pdb
+E:\Technomax_Projects\SmartCity\SmartCityServiceLibrary\obj\Debug\SmartCityServiceLibrary.csprojResolveAssemblyReference.cache

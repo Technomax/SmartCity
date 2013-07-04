@@ -1,0 +1,22 @@
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\WeatherForecast.exe.config
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\WeatherForecast.exe
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\WeatherForecast.pdb
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\EntityFramework.dll
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\EntityFramework.xml
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Debug\WeatherForecast.csprojResolveAssemblyReference.cache
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Debug\WeatherForecast.exe
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\obj\Debug\WeatherForecast.pdb
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\NNhelpers.dll
+c:\users\hank serene\documents\visual studio 2012\Projects\WeatherForecast\WeatherForecast\bin\Debug\NNhelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\WeatherForecast.dll.config
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\WeatherForecast.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\WeatherForecast.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\EntityFramework.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\SmartCityEntity.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\SmartCityEntity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\bin\Debug\EntityFramework.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\obj\Debug\WeatherForecast.csprojResolveAssemblyReference.cache
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\obj\Debug\WeatherForecast.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\WeatherForecast\obj\Debug\WeatherForecast.pdb

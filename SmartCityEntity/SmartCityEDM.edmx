@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SmartCityModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="SmartCityModelStoreContainer">
+          <EntitySet Name="Adm_ForecastWeather" EntityType="SmartCityModel.Store.Adm_ForecastWeather" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Adm_Weather" EntityType="SmartCityModel.Store.Adm_Weather" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Adm_ForecastWeather">
+          <Key>
+            <PropertyRef Name="IDForecastWeather" />
+          </Key>
+          <Property Name="IDForecastWeather" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IDStation" Type="int" Nullable="false" />
+          <Property Name="MinTemp" Type="int" Nullable="false" />
+          <Property Name="MaxTemp" Type="int" Nullable="false" />
+          <Property Name="RainFall" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Adm_Weather">
+          <Key>
+            <PropertyRef Name="IDWeather" />
+          </Key>
+          <Property Name="IDWeather" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Station" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="WeatherDate" Type="datetime" Nullable="false" />
+          <Property Name="MinTemp" Type="float" Nullable="false" />
+          <Property Name="MaxTemp" Type="float" Nullable="false" />
+          <Property Name="RainFall" Type="float" Nullable="false" />
+          <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+        </EntityType>
+        <Function Name="fc_BaseLine" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paramStation" Type="varchar" Mode="In" />
+          <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+          <Parameter Name="paramTo" Type="datetime" Mode="In" />
+          <Parameter Name="Mode" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MeaureDate" Type="varchar" MaxLength="100" />
+                <Property Name="Station" Type="varchar" MaxLength="100" />
+                <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+                <Property Name="MinTemp" Type="float" Nullable="false" />
+                <Property Name="MaxTemp" Type="float" Nullable="false" />
+                <Property Name="RainFall" Type="float" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fc_DualAxesLineAndColumn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paramStation" Type="varchar" Mode="In" />
+          <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+          <Parameter Name="paramTo" Type="datetime" Mode="In" />
+          <Parameter Name="Mode" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MeaureDate" Type="varchar" MaxLength="100" />
+                <Property Name="Station" Type="varchar" MaxLength="100" />
+                <Property Name="AvgTemp" Type="float" Nullable="false" />
+                <Property Name="AvgRainFall" Type="float" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fc_GetLast7DayData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paramStation" Type="varchar" Mode="In" />
+          <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+          <Parameter Name="paramTo" Type="datetime" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MeaureDate" Type="datetime" />
+                <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+                <Property Name="MinTemp" Type="float" Nullable="false" />
+                <Property Name="MaxTemp" Type="float" Nullable="false" />
+                <Property Name="RainFall" Type="float" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fc_PreditInput" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paramDate" Type="datetime" Mode="In" />
+          <Parameter Name="paramStation" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MeaureDate" Type="datetime" />
+                <Property Name="Station" Type="varchar" MaxLength="100" />
+                <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+                <Property Name="MinTemp" Type="float" Nullable="false" />
+                <Property Name="MaxTemp" Type="float" Nullable="false" />
+                <Property Name="RainFall" Type="float" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fc_rpt_Tabular" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paramStation" Type="varchar" Mode="In" />
+          <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+          <Parameter Name="paramTo" Type="datetime" Mode="In" />
+          <Parameter Name="Mode" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="MeaureDate" Type="varchar" MaxLength="100" />
+                <Property Name="Station" Type="varchar" MaxLength="100" />
+                <Property Name="AirPolutionLevel" Type="float" Nullable="false" />
+                <Property Name="MinTemp" Type="float" Nullable="false" />
+                <Property Name="MaxTemp" Type="float" Nullable="false" />
+                <Property Name="RainFall" Type="float" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="sp_GetDataForColLineAndPie" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="paramStation" Type="varchar" Mode="In" />
+          <Parameter Name="paramFrom" Type="datetime" Mode="In" />
+          <Parameter Name="paramTo" Type="datetime" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SmartCityModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SmartCityEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Adm_ForecastWeather" EntityType="SmartCityModel.Adm_ForecastWeather" />
+          <EntitySet Name="Adm_Weather" EntityType="SmartCityModel.Adm_Weather" />
+          <FunctionImport Name="fc_BaseLine" IsComposable="true" ReturnType="Collection(SmartCityModel.fc_BaseLine_Result)">
+            <Parameter Name="paramStation" Mode="In" Type="String" />
+            <Parameter Name="paramFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="paramTo" Mode="In" Type="DateTime" />
+            <Parameter Name="Mode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="fc_rpt_Tabular" IsComposable="true" ReturnType="Collection(SmartCityModel.fc_rpt_Tabular_Result)">
+            <Parameter Name="paramStation" Mode="In" Type="String" />
+            <Parameter Name="paramFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="paramTo" Mode="In" Type="DateTime" />
+            <Parameter Name="Mode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_GetDataForColLineAndPie" ReturnType="Collection(SmartCityModel.sp_GetDataForColLineAndPie_Result)">
+            <Parameter Name="paramStation" Mode="In" Type="String" />
+            <Parameter Name="paramFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="paramTo" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="fc_DualAxesLineAndColumn" IsComposable="true" ReturnType="Collection(SmartCityModel.fc_DualAxesLineAndColumn_Result)">
+            <Parameter Name="paramStation" Mode="In" Type="String" />
+            <Parameter Name="paramFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="paramTo" Mode="In" Type="DateTime" />
+            <Parameter Name="Mode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="fc_PreditInput" IsComposable="true" ReturnType="Collection(SmartCityModel.fc_PreditInput_Result)">
+            <Parameter Name="paramDate" Mode="In" Type="DateTime" />
+            <Parameter Name="paramStation" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="fc_GetLast7DayData" IsComposable="true" ReturnType="Collection(SmartCityModel.fc_GetLast7DayData_Result)">
+            <Parameter Name="paramStation" Mode="In" Type="String" />
+            <Parameter Name="paramFrom" Mode="In" Type="DateTime" />
+            <Parameter Name="paramTo" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Adm_ForecastWeather">
+          <Key>
+            <PropertyRef Name="IDForecastWeather" />
+          </Key>
+          <Property Type="Int64" Name="IDForecastWeather" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IDStation" Nullable="false" />
+          <Property Type="Int32" Name="MinTemp" Nullable="false" />
+          <Property Type="Int32" Name="MaxTemp" Nullable="false" />
+          <Property Type="Int32" Name="RainFall" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Adm_Weather">
+          <Key>
+            <PropertyRef Name="IDWeather" />
+          </Key>
+          <Property Type="Int64" Name="IDWeather" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Station" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="WeatherDate" Nullable="false" Precision="3" />
+          <Property Type="Double" Name="MinTemp" Nullable="false" />
+          <Property Type="Double" Name="MaxTemp" Nullable="false" />
+          <Property Type="Double" Name="RainFall" Nullable="false" />
+          <Property Type="Double" Name="AirPolutionLevel" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="fc_BaseLine_Result">
+          <Property Type="String" Name="MeaureDate" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Station" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="AirPolutionLevel" Nullable="false" />
+          <Property Type="Double" Name="MinTemp" Nullable="false" />
+          <Property Type="Double" Name="MaxTemp" Nullable="false" />
+          <Property Type="Double" Name="RainFall" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="fc_rpt_Tabular_Result">
+          <Property Type="String" Name="MeaureDate" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Station" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="AirPolutionLevel" Nullable="false" />
+          <Property Type="Double" Name="MinTemp" Nullable="false" />
+          <Property Type="Double" Name="MaxTemp" Nullable="false" />
+          <Property Type="Double" Name="RainFall" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="sp_GetDataForColLineAndPie_Result">
+          <Property Type="String" Name="Station" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="AvgAirPollutionLevel" Nullable="true" />
+          <Property Type="Double" Name="AvgMinTemp" Nullable="false" />
+          <Property Type="Double" Name="AvgMaxTemp" Nullable="false" />
+          <Property Type="Double" Name="AvgRainFall" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="fc_DualAxesLineAndColumn_Result">
+          <Property Type="String" Name="MeaureDate" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Station" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="AvgTemp" Nullable="false" />
+          <Property Type="Double" Name="AvgRainFall" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="fc_PreditInput_Result">
+          <Property Type="DateTime" Name="MeaureDate" Nullable="false" Precision="23" />
+          <Property Type="String" Name="Station" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="AirPolutionLevel" Nullable="false" />
+          <Property Type="Double" Name="MinTemp" Nullable="false" />
+          <Property Type="Double" Name="MaxTemp" Nullable="false" />
+          <Property Type="Double" Name="RainFall" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="fc_GetLast7DayData_Result">
+          <Property Type="DateTime" Name="MeaureDate" Nullable="true" Precision="23" />
+          <Property Type="Double" Name="AirPolutionLevel" Nullable="false" />
+          <Property Type="Double" Name="MinTemp" Nullable="false" />
+          <Property Type="Double" Name="MaxTemp" Nullable="false" />
+          <Property Type="Double" Name="RainFall" Nullable="false" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SmartCityModelStoreContainer" CdmEntityContainer="SmartCityEntities">
+          <EntitySetMapping Name="Adm_ForecastWeather">
+            <EntityTypeMapping TypeName="SmartCityModel.Adm_ForecastWeather">
+              <MappingFragment StoreEntitySet="Adm_ForecastWeather">
+                <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+                <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+                <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+                <ScalarProperty Name="IDStation" ColumnName="IDStation" />
+                <ScalarProperty Name="IDForecastWeather" ColumnName="IDForecastWeather" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Adm_Weather">
+            <EntityTypeMapping TypeName="SmartCityModel.Adm_Weather">
+              <MappingFragment StoreEntitySet="Adm_Weather">
+                <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+                <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+                <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+                <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+                <ScalarProperty Name="WeatherDate" ColumnName="WeatherDate" />
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="IDWeather" ColumnName="IDWeather" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="fc_BaseLine" FunctionName="SmartCityModel.Store.fc_BaseLine">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SmartCityModel.fc_BaseLine_Result">
+                <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+                <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+                <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+                <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fc_rpt_Tabular" FunctionName="SmartCityModel.Store.fc_rpt_Tabular">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SmartCityModel.fc_rpt_Tabular_Result">
+                <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+                <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+                <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+                <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_GetDataForColLineAndPie" FunctionName="SmartCityModel.Store.sp_GetDataForColLineAndPie">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SmartCityModel.sp_GetDataForColLineAndPie_Result">
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="AvgAirPollutionLevel" ColumnName="AvgAirPollutionLevel" />
+                <ScalarProperty Name="AvgMinTemp" ColumnName="AvgMinTemp" />
+                <ScalarProperty Name="AvgMaxTemp" ColumnName="AvgMaxTemp" />
+                <ScalarProperty Name="AvgRainFall" ColumnName="AvgRainFall" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fc_DualAxesLineAndColumn" FunctionName="SmartCityModel.Store.fc_DualAxesLineAndColumn">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SmartCityModel.fc_DualAxesLineAndColumn_Result">
+                <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="AvgTemp" ColumnName="AvgTemp" />
+                <ScalarProperty Name="AvgRainFall" ColumnName="AvgRainFall" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fc_PreditInput" FunctionName="SmartCityModel.Store.fc_PreditInput">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SmartCityModel.fc_PreditInput_Result">
+                <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+                <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+                <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+                <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fc_GetLast7DayData" FunctionName="SmartCityModel.Store.fc_GetLast7DayData">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SmartCityModel.fc_GetLast7DayData_Result">
+                <ScalarProperty Name="MeaureDate" ColumnName="MeaureDate" />
+                <ScalarProperty Name="AirPolutionLevel" ColumnName="AirPolutionLevel" />
+                <ScalarProperty Name="MinTemp" ColumnName="MinTemp" />
+                <ScalarProperty Name="MaxTemp" ColumnName="MaxTemp" />
+                <ScalarProperty Name="RainFall" ColumnName="RainFall" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

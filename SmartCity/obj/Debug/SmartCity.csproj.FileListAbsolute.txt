@@ -1,0 +1,154 @@
+E:\anilProject\SmartCity\SmartCity\bin\SmartCity.dll
+E:\anilProject\SmartCity\SmartCity\bin\SmartCity.pdb
+E:\anilProject\SmartCity\SmartCity\bin\Antlr3.Runtime.dll
+E:\anilProject\SmartCity\SmartCity\bin\DotNet.Highcharts.dll
+E:\anilProject\SmartCity\SmartCity\bin\EntityFramework.dll
+E:\anilProject\SmartCity\SmartCity\bin\Microsoft.Web.Infrastructure.dll
+E:\anilProject\SmartCity\SmartCity\bin\Newtonsoft.Json.dll
+E:\anilProject\SmartCity\SmartCity\bin\SmartCityEntity.dll
+E:\anilProject\SmartCity\SmartCity\bin\SmartCitySerLib.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Net.Http.Formatting.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Http.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Http.WebHost.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Mvc.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Optimization.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Providers.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Razor.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.WebPages.dll
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.dll
+E:\anilProject\SmartCity\SmartCity\bin\WebGrease.dll
+E:\anilProject\SmartCity\SmartCity\bin\SmartCityEntity.pdb
+E:\anilProject\SmartCity\SmartCity\bin\SmartCitySerLib.pdb
+E:\anilProject\SmartCity\SmartCity\bin\EntityFramework.xml
+E:\anilProject\SmartCity\SmartCity\bin\Newtonsoft.Json.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Net.Http.Formatting.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Http.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Http.WebHost.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Mvc.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.Razor.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.WebPages.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.xml
+E:\anilProject\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.xml
+E:\anilProject\SmartCity\SmartCity\obj\Debug\SmartCity.csprojResolveAssemblyReference.cache
+E:\anilProject\SmartCity\SmartCity\obj\Debug\SmartCity.dll
+E:\anilProject\SmartCity\SmartCity\obj\Debug\SmartCity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\SmartCity.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\SmartCity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\Antlr3.Runtime.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\DotNet.Highcharts.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\EntityFramework.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\Newtonsoft.Json.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\SmartCityEntity.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\SmartCitySerLib.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Net.Http.Formatting.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Http.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Http.WebHost.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Mvc.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Optimization.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Providers.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Razor.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.WebPages.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\WebGrease.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\SmartCityEntity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\SmartCitySerLib.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\EntityFramework.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\Newtonsoft.Json.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Net.Http.Formatting.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Http.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Http.WebHost.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Mvc.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.Razor.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.WebPages.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.xml
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\obj\Debug\SmartCity.csprojResolveAssemblyReference.cache
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\obj\Debug\SmartCity.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\obj\Debug\SmartCity.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\NNHelpers.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\NNHelpers.pdb
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\Forecasting.dll
+C:\Users\Hank Serene\Desktop\SmartCity_V2\SmartCity\SmartCity\bin\Forecasting.pdb
+C:\Users\Anil\Desktop\SmartCity_Integrated\SmartCity\SmartCity\obj\Debug\SmartCity.csprojResolveAssemblyReference.cache
+C:\Users\Anil\Desktop\SmartCity_Integrated\SmartCity\SmartCity\obj\Debug\SmartCity.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\SmartCity.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\SmartCity.pdb
+E:\Technomax_Projects\SmartCity\SmartCity\bin\Antlr3.Runtime.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\DotNet.Highcharts.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\EntityFramework.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\Forecasting.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\Microsoft.Web.Infrastructure.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\Newtonsoft.Json.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\SmartCityEntity.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\SmartCitySerLib.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Net.Http.Formatting.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Http.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Http.WebHost.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Mvc.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Optimization.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Providers.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Razor.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.WebPages.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\WebGrease.dll
+E:\Technomax_Projects\SmartCity\SmartCity\bin\Forecasting.pdb
+E:\Technomax_Projects\SmartCity\SmartCity\bin\NNHelpers.pdb
+E:\Technomax_Projects\SmartCity\SmartCity\bin\SmartCityEntity.pdb
+E:\Technomax_Projects\SmartCity\SmartCity\bin\SmartCitySerLib.pdb
+E:\Technomax_Projects\SmartCity\SmartCity\bin\EntityFramework.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\Newtonsoft.Json.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Net.Http.Formatting.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Http.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Http.WebHost.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Mvc.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.Razor.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.WebPages.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.xml
+E:\Technomax_Projects\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.xml
+E:\Technomax_Projects\SmartCity\SmartCity\obj\Debug\SmartCity.csprojResolveAssemblyReference.cache
+E:\Technomax_Projects\SmartCity\SmartCity\obj\Debug\SmartCity.dll
+E:\Technomax_Projects\SmartCity\SmartCity\obj\Debug\SmartCity.pdb
+E:\SmartCity\SmartCity\bin\SmartCity.dll
+E:\SmartCity\SmartCity\bin\SmartCity.pdb
+E:\SmartCity\SmartCity\bin\Antlr3.Runtime.dll
+E:\SmartCity\SmartCity\bin\DotNet.Highcharts.dll
+E:\SmartCity\SmartCity\bin\EntityFramework.dll
+E:\SmartCity\SmartCity\bin\Forecasting.dll
+E:\SmartCity\SmartCity\bin\Microsoft.Web.Infrastructure.dll
+E:\SmartCity\SmartCity\bin\Newtonsoft.Json.dll
+E:\SmartCity\SmartCity\bin\NNHelpers.dll
+E:\SmartCity\SmartCity\bin\SmartCityEntity.dll
+E:\SmartCity\SmartCity\bin\SmartCitySerLib.dll
+E:\SmartCity\SmartCity\bin\System.Net.Http.Formatting.dll
+E:\SmartCity\SmartCity\bin\System.Web.Http.dll
+E:\SmartCity\SmartCity\bin\System.Web.Http.WebHost.dll
+E:\SmartCity\SmartCity\bin\System.Web.Mvc.dll
+E:\SmartCity\SmartCity\bin\System.Web.Optimization.dll
+E:\SmartCity\SmartCity\bin\System.Web.Providers.dll
+E:\SmartCity\SmartCity\bin\System.Web.Razor.dll
+E:\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.dll
+E:\SmartCity\SmartCity\bin\System.Web.WebPages.dll
+E:\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.dll
+E:\SmartCity\SmartCity\bin\WebGrease.dll
+E:\SmartCity\SmartCity\bin\Forecasting.pdb
+E:\SmartCity\SmartCity\bin\NNHelpers.pdb
+E:\SmartCity\SmartCity\bin\SmartCityEntity.pdb
+E:\SmartCity\SmartCity\bin\SmartCitySerLib.pdb
+E:\SmartCity\SmartCity\bin\EntityFramework.xml
+E:\SmartCity\SmartCity\bin\Newtonsoft.Json.xml
+E:\SmartCity\SmartCity\bin\System.Net.Http.Formatting.xml
+E:\SmartCity\SmartCity\bin\System.Web.Http.xml
+E:\SmartCity\SmartCity\bin\System.Web.Http.WebHost.xml
+E:\SmartCity\SmartCity\bin\System.Web.Mvc.xml
+E:\SmartCity\SmartCity\bin\System.Web.Razor.xml
+E:\SmartCity\SmartCity\bin\System.Web.WebPages.xml
+E:\SmartCity\SmartCity\bin\System.Web.WebPages.Deployment.xml
+E:\SmartCity\SmartCity\bin\System.Web.WebPages.Razor.xml
+E:\SmartCity\SmartCity\obj\Debug\SmartCity.csprojResolveAssemblyReference.cache
+E:\SmartCity\SmartCity\obj\Debug\SmartCity.dll
+E:\SmartCity\SmartCity\obj\Debug\SmartCity.pdb

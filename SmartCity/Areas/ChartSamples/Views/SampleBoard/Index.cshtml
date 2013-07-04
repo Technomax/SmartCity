@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Areas/ChartSamples/Views/Shared/_Layout.cshtml";
+}
+<div class="span24">
+    <div class="span12">
+        @{Html.RenderAction("_SingleLine","SampleBoard");}
+    </div>
+    <div class="span12">
+        @{Html.RenderAction("_DataLabels", "SampleBoard");}
+    </div>
+     <div class="span12">
+        @{Html.RenderAction("_PieChart","SampleBoard");}
+    </div>
+    <div class="span12">
+        @{Html.RenderAction("_StackedBar", "SampleBoard");}
+    </div>
+</div>

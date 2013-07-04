@@ -1,0 +1,5 @@
+E:\Technomax_Projects\SmartCity\NNHelpers\bin\Release\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\NNHelpers\bin\Release\NNHelpers.pdb
+E:\Technomax_Projects\SmartCity\NNHelpers\obj\Release\NNHelpers.csprojResolveAssemblyReference.cache
+E:\Technomax_Projects\SmartCity\NNHelpers\obj\Release\NNHelpers.dll
+E:\Technomax_Projects\SmartCity\NNHelpers\obj\Release\NNHelpers.pdb
